@@ -11,6 +11,8 @@ git config --global user.email "umesh@gmail.com"
 
 ->In Windows PowerShell
 Get-ChildItem -Force
+or
+ls -force
 
 ->In Linux Terminal
 ls -a
