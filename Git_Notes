@@ -1,0 +1,70 @@
+Git and GitHub
+->Check Git Version
+
+git --version
+
+->Git Configuration
+git config --global user.name "username"
+git config --global user.email "umesh@gmail.com"
+=============================================================
+*Display Hidden Files
+
+->In Windows PowerShell
+Get-ChildItem -Force
+
+->In Linux Terminal
+ls -a
+============================================================================
+*Steps to Add New Files or Modifications from Local Machine to GitHub
+Check Status:
+
+git status
+->Add File:
+git add filename
+
+->Commit File:
+git commit -m "message"
+
+->Push File to GitHub:
+git push origin main
+
+===================================================================================================
+*Starting a Repository on Local Machine and Sending it to GitHub
+
+->Initialize Git Repository:
+git init
+
+->Check for Git Repository:
+ls -a
+Note:- (If .git directory is present, it is a Git repository.)
+
+
+->Create Your Files in the Repository and Use the Commands Above to Send Files from Local to GitHub Repo.
+
+#Now to Send Repository to GitHub:
+
+a. Create a Repository on GitHub:
+- Create a new repository on GitHub with a name of your choice and copy the repository's HTTP link.
+
+b. Add Remote Origin to Local Repository:
+ git remote add origin <repository-link>
+
+c. Verify Remote Origin:
+ git remote -v
+
+d. Check Current Branch:
+ git branch
+
+e. Rename Branch to main (if needed):
+ git branch -M main
+
+->Push Repository to GitHub:
+
+git push origin main
+===================================================================================================
+**Notes**
+Ensure to replace <repository-link> with the actual URL of your GitHub repository.
+Replace filename with the actual name of the file you are adding or committing.
+Replace message with a descriptive commit message.
+This should make your Git and GitHub notes clear, accurate, and suitable for reference.
+
